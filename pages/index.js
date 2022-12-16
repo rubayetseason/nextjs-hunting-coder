@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Script from "next/script";
+import Link from "next/link";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
@@ -18,34 +18,51 @@ export default function Home() {
       <main className={styles.main}>
         <nav className={styles.mainNav}>
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Blog</li>
-            <li>Contact</li>
+            <Link href="/">
+              <li>Home</li>
+            </Link>
+            <Link href="/about">
+              <li>About</li>
+            </Link>
+            <Link href="/blog">
+              <li>Blog</li>
+            </Link>
+            <Link href="/contact">
+              <li>Contact</li>
+            </Link>
           </ul>
         </nav>
-<div className={styles.center}>
-<h1>Hunting Coder</h1>
-<p>A website for hunting coders, made by a hunted coder.</p>
-</div>
-       <div className="blogs">
-        <h2>Popular Blogs</h2>
-        <br />
-        <div className="blogItem">
-          <h3>How to learn javascript in 2023?</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, maxime!</p>
+        <div className={styles.center}>
+          <h1>Hunting Coder</h1>
+          <p>A website for hunting coders, made by a hunted coder.</p>
         </div>
-        <br />
-        <div className="blogItem">
-          <h3>How to learn javascript in 2023?</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, maxime!</p>
+        <div className="blogs">
+          <h2>Popular Blogs</h2>
+          <br />
+          <div className="blogItem">
+            <h3>How to learn javascript in 2023?</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+              maxime!
+            </p>
+          </div>
+          <br />
+          <div className="blogItem">
+            <h3>How to learn javascript in 2023?</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+              maxime!
+            </p>
+          </div>
+          <br />
+          <div className="blogItem">
+            <h3>How to learn javascript in 2023?</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+              maxime!
+            </p>
+          </div>
         </div>
-        <br />
-        <div className="blogItem">
-          <h3>How to learn javascript in 2023?</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, maxime!</p>
-        </div>
-       </div>
       </main>
     </>
   );
