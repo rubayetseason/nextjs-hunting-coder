@@ -15,8 +15,38 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Script src="" strategy="lazyOnload"></Script>
-      <main className={styles.main}></main>
+      <main className={styles.main}>
+        <nav className={styles.mainNav}>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+<div className={styles.center}>
+<h1>Hunting Coder</h1>
+<p>A website for hunting coders, made by a hunted coder.</p>
+</div>
+       <div className="blogs">
+        <h2>Popular Blogs</h2>
+        <br />
+        <div className="blogItem">
+          <h3>How to learn javascript in 2023?</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, maxime!</p>
+        </div>
+        <br />
+        <div className="blogItem">
+          <h3>How to learn javascript in 2023?</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, maxime!</p>
+        </div>
+        <br />
+        <div className="blogItem">
+          <h3>How to learn javascript in 2023?</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, maxime!</p>
+        </div>
+       </div>
+      </main>
     </>
   );
 }
