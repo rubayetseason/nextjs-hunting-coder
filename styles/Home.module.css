@@ -8,8 +8,6 @@
 }
 
 .mainNav ul {
-  background-color: red;
-  color: white;
   display: flex;
   justify-content: center;
 }
@@ -17,4 +15,8 @@
   font-weight: bold;
   margin: 20px;
   list-style: none;
+}
+
+.pic {
+border-radius: 5px;
 }

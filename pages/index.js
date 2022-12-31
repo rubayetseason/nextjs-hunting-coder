@@ -15,14 +15,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <style jsx>
-        {
-          `
-          .mySpan{
-            color: red
-          }`
-        }
-      </style>
+
       <main className={styles.main}>
         <nav className={styles.mainNav}>
           <ul>
@@ -41,7 +34,8 @@ export default function Home() {
           </ul>
         </nav>
         <div className={styles.center}>
-          <h1 className="mySpan">Hunting Coder</h1>
+          <h1>Hunting Coder</h1>
+       <img className={styles.pic} src="laptop1.jpg" width={200} height={132} alt='hello' />
           <p>A website for hunting coders, made by a hunted coder.</p>
         </div>
         <div className="blogs">
