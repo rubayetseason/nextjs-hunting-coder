@@ -34,12 +34,28 @@ export default function Home() {
           </ul>
         </nav>
         <div className={styles.center}>
-          <h1>Hunting Coder</h1>
-       <img className={styles.pic} src="laptop1.jpg" width={200} height={132} alt='hello' />
+          <style jsx global>
+            {`
+              .hunting {
+                font-size: 45px;
+              }
+              .popular {
+                font-size: 30px;
+              }
+            `}
+          </style>
+          <h1 className="hunting">Hunting Coder</h1>
+          <img
+            className={styles.pic}
+            src="laptop1.jpg"
+            width={200}
+            height={132}
+            alt="hello"
+          />
           <p>A website for hunting coders, made by a hunted coder.</p>
         </div>
         <div className="blogs">
-          <h2>Popular Blogs</h2>
+          <h2 className="popular">Popular Blogs</h2>
           <br />
           <div className="blogItem">
             <h3>How to learn javascript in 2023?</h3>
