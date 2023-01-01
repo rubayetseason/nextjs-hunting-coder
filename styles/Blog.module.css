@@ -1,0 +1,9 @@
+.main {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.blogName {
+cursor: pointer;
+}
