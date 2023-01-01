@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
-import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 
@@ -17,22 +15,6 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <nav className={styles.mainNav}>
-          <ul>
-            <Link href="/">
-              <li>Home</li>
-            </Link>
-            <Link href="/about">
-              <li>About</li>
-            </Link>
-            <Link href="/blog">
-              <li>Blog</li>
-            </Link>
-            <Link href="/contact">
-              <li>Contact</li>
-            </Link>
-          </ul>
-        </nav>
         <div className={styles.center}>
           <style jsx global>
             {`
@@ -55,7 +37,7 @@ export default function Home() {
           <p>A website for hunting coders, made by a hunted coder.</p>
         </div>
         <div className="blogs">
-          <h2 className="popular">Popular Blogs</h2>
+          <h2 className="popular">Latest Blogs</h2>
           <br />
           <div className="blogItem">
             <h3>How to learn javascript in 2023?</h3>
